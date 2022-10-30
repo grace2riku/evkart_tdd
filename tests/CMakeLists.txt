@@ -1,6 +1,7 @@
 file(GLOB SOURCES 
 	"./*.c" "./*.cpp"
 	"hello/*.c" "hello/*.cpp"
+	"HallSensorLedDriver/*.c" "HallSensorLedDriver/*.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -18,7 +19,9 @@ add_library(imp_libCppUTestExt STATIC IMPORTED)
 set_property(TARGET imp_libCppUTestExt PROPERTY
              IMPORTED_LOCATION $ENV{CPPUTEST_HOME}/lib/libCppUTestExt.a)
 
+
 target_link_libraries(${PROJECT_NAME} 
     hello
+    HallSensorLedDriver
     imp_cpputest imp_libCppUTestExt
     )
