@@ -1,6 +1,6 @@
 #include "HallSensorLedDriver.h"
 
-void HallSensorLedDriver_Create(void)
+void HallSensorLedDriver_Create(unsigned char* address)
 {
 }
 

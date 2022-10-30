@@ -7,7 +7,7 @@
  *
  **********************************************************/
 
-void HallSensorLedDriver_Create(void);
+void HallSensorLedDriver_Create(unsigned char* address);
 void HallSensorLedDriver_Destroy(void);
 
 #endif  /* D_FakeHallSensorLedDriver_H */

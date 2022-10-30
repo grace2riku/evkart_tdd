@@ -9,7 +9,7 @@ TEST_GROUP(HallSensorLedDriver)
 {
     void setup()
     {
-      HallSensorLedDriver_Create();
+//      HallSensorLedDriver_Create();
     }
 
     void teardown()
