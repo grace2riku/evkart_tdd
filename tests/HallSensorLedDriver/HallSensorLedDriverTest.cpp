@@ -21,6 +21,8 @@ TEST_GROUP(HallSensorLedDriver)
 // ドライバを初期化したら、すべてのLEDが消灯している
 TEST(HallSensorLedDriver, LedsOffAfterCreate)
 {
-//  FAIL("Start here");
+  unsigned char virtualLeds = 0xff;
+  HallSensorLedDriver_Create(&virtualLeds);
+  BYTES_EQUAL(0, virtualLeds);
 }
 
