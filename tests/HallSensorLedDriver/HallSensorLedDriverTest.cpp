@@ -18,7 +18,8 @@ TEST_GROUP(HallSensorLedDriver)
     }
 };
 
-TEST(HallSensorLedDriver, Create)
+// ドライバを初期化したら、すべてのLEDが消灯している
+TEST(HallSensorLedDriver, LedsOffAfterCreate)
 {
   FAIL("Start here");
 }
