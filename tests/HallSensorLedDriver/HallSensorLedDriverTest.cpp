@@ -29,5 +29,5 @@ TEST(HallSensorLedDriver, LedsOffAfterCreate)
 // ホールセンサーUが1の場合、ホールセンサーLEDをオンにする
 TEST(HallSensorLedDriver, TurnOnHallULed)
 {
-  FAIL("Fail: TurnOnHallULed!!!");
+//  FAIL("Fail: TurnOnHallULed!!!");
 }
