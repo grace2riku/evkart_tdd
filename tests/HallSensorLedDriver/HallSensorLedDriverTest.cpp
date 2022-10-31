@@ -29,5 +29,9 @@ TEST(HallSensorLedDriver, LedsOffAfterCreate)
 // ホールセンサーUが1の場合、ホールセンサーLEDをオンにする
 TEST(HallSensorLedDriver, TurnOnHallULed)
 {
-//  FAIL("Fail: TurnOnHallULed!!!");
+  unsigned char virtualLeds;
+  HallSensorLedDriver_Create(&virtualLeds);
+  HallSensorLedDriver_TurnOn(0x04);
+  BYTES_EQUAL(0x04, virtualLeds);
 }
+
