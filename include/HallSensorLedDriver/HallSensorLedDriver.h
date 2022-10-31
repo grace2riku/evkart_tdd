@@ -9,5 +9,6 @@
 
 void HallSensorLedDriver_Create(unsigned char* address);
 void HallSensorLedDriver_Destroy(void);
+void HallSensorLedDriver_TurnOn(unsigned char ledBitNumber);
 
 #endif  /* D_FakeHallSensorLedDriver_H */
