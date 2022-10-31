@@ -35,7 +35,7 @@ TEST(HallSensorLedDriver, TurnOnHallULed)
   BYTES_EQUAL(0x04, virtualLeds);
 }
 
-// ホールセンサーUが1の場合、ホールセンサーLEDをオンにする
+// ホールセンサーUが0の場合、ホールセンサーLEDをオフにする
 TEST(HallSensorLedDriver, TurnOffHallULed)
 {
   unsigned char virtualLeds;

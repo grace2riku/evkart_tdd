@@ -18,5 +18,5 @@ void HallSensorLedDriver_TurnOn(unsigned char ledBitNumber) {
 }
 
 void HallSensorLedDriver_TurnOff(unsigned char ledBitNumber){
-    
+    *hallSensorLedsAddress = 0x00;
 }
